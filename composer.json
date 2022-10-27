@@ -1,0 +1,53 @@
+{
+  "name": "firiks/acyt-master",
+  "description": "Dev plugin",
+  "type": "wordpress-plugin",
+  "homepage": "https://github.com/Firiks",
+  "license": "GPL-3.0",
+  "authors": [
+    {
+      "name": "Firiks",
+      "email": "miki@tst.com",
+      "homepage": "https://github.com/Firiks"
+    }
+  ],
+  "keywords": [
+    "plugin",
+    "wordpress"
+  ],
+  "support": {
+    "issues": "https://github.com/Firiks/issues"
+  },
+  "config": {
+    "platform": {
+      "php": "7.4"
+    },
+    "optimize-autoloader": true,
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "AcytMaster\\": "inc/"
+    }
+  },
+  "scripts": {
+    "standards:check": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs",
+    "standards:fix": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcbf",
+    "analyze": "@php ./vendor/bin/phpstan analyze"
+  },
+  "require-dev": {
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
+    "php-stubs/woocommerce-stubs": "^4.6",
+    "php-stubs/wordpress-globals": "^0.2.0",
+    "phpcompatibility/php-compatibility": "^9.3",
+    "phpcompatibility/phpcompatibility-wp": "^2.1",
+    "squizlabs/php_codesniffer": "^3.5.6",
+    "szepeviktor/phpstan-wordpress": "^0.6.5",
+    "phpstan/extension-installer": "dev-master",
+    "roave/security-advisories": "dev-master"
+  }
+}
