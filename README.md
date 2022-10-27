@@ -1,6 +1,6 @@
 # Wordpress starter plugin
 
-Full list of sections and features we will build during the series of Tutorials
+Full list of sections and features that are working
 
 - Modular Administration Area
 - CPT Manager
